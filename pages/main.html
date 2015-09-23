@@ -1,0 +1,26 @@
+<div class="container">
+    <label>Enter Your Query</label>
+    <input type="text" placeholder="Query">
+    <a href="#/results" class="btn btn-primary">Search</a>
+    <!-- See inside sample json file-->
+    <!-- inside data -->
+    <div ng-repeat="data in data">
+        <!-- inside response-->
+        <div ng-repeat="response in data">
+            <!--inside docs-->
+            <div ng-repeat="docs in response.docs">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">{{docs.web_url}}</h3>
+                            </div>
+                            <div class="panel-body">
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
